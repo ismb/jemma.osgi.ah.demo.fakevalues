@@ -23,12 +23,23 @@
 	<groupId>org.energy-home</groupId>
 	<artifactId>jemma.osgi.ah.demo.fakevalues</artifactId>
 	<packaging>bundle</packaging>
-	<version>0.1.1</version>
+	<version>0.1.2</version>
 	<name>Fake values provider for demos</name>
 	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		
+		<!-- Internal dependencies version properties -->
+		
+		<!-- External dependencies version properties -->
+		<javax.servlet2.version>2.5.0</javax.servlet2.version>
+		<org.osgi.compendium.version>4.2.0</org.osgi.compendium.version>		
+		<org.osgi.core.version>4.2.0</org.osgi.core.version>			
+		<org.slf4j.version>1.6.2</org.slf4j.version>
+		
+		<!-- Maven plugin version properties -->
 		<felix.bundle.plugin.version>2.5.3</felix.bundle.plugin.version>
-		<javax.servlet.version>2.5.0</javax.servlet.version>
-		<org.slf4j.version>1.6.2</org.slf4j.version>	
+		
+		
 	</properties>
 	<build>
 		<resources>
@@ -91,29 +102,34 @@
 		</repository>
 	</repositories>
 	<dependencies>
-		<dependency>
-			<groupId>org.osgi</groupId>
-			<artifactId>org.osgi.core</artifactId>
-			<version>4.2.0</version>
-			<scope>compile</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.osgi</groupId>
-			<artifactId>org.osgi.compendium</artifactId>
-			<version>4.2.0</version>
-			<scope>compile</scope>
-		</dependency>
+	
+		<!-- Internal dependencies  -->
+		
+		<!-- External dependencies -->		
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>javax.servlet</artifactId>
-			<version>${javax.servlet.version}</version>
+			<version>${javax.servlet2.version}</version>
+			<scope>compile</scope>
+		</dependency>	
+		<dependency>
+			<groupId>org.osgi</groupId>
+			<artifactId>org.osgi.compendium</artifactId>
+			<version>${org.osgi.compendium.version}</version>
+			<scope>compile</scope>
+		</dependency>		
+		<dependency>
+			<groupId>org.osgi</groupId>
+			<artifactId>org.osgi.core</artifactId>
+			<version>${org.osgi.core.version}</version>
 			<scope>compile</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-api</artifactId>
 			<version>${org.slf4j.version}</version>
-		</dependency>	
+			<scope>compile</scope>
+		</dependency>			
 
 	</dependencies>
 
