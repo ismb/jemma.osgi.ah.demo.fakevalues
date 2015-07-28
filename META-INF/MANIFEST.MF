@@ -1,11 +1,11 @@
 Manifest-Version: 1.0
-Bnd-LastModified: 1438026224433
-Build-Jdk: 1.7.0_45
-Built-By: bluewind
+Bnd-LastModified: 1438073370684
+Build-Jdk: 1.8.0_31
+Built-By: 11621035
 Bundle-Category: Automation@Home Application
 Bundle-ManifestVersion: 2
 Bundle-Name: Fake values provider for demos
-Bundle-RequiredExecutionEnvironment: JJ2SE-1.5
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
 Bundle-SymbolicName: org.energy-home.jemma.osgi.ah.demo.fakevalues
 Bundle-Vendor: Telecom Italia
 Bundle-Version: 0.1.2
