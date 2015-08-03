@@ -1,7 +1,7 @@
 Manifest-Version: 1.0
-Bnd-LastModified: 1438073370684
-Build-Jdk: 1.8.0_31
-Built-By: 11621035
+Bnd-LastModified: 1438598077870
+Build-Jdk: 1.8.0_45
+Built-By: tomasi
 Bundle-Category: Automation@Home Application
 Bundle-ManifestVersion: 2
 Bundle-Name: Fake values provider for demos
